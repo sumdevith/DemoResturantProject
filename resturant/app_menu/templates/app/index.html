@@ -1,0 +1,250 @@
+{%extends 'app/base.html'%} 
+{% block navbar %}
+    <div class="placeholder">
+      {% load static %}
+      <div
+        class="parallax-window"
+        data-parallax="scroll"
+        data-image-src="{% static 'images/simple-house-01.jpg' %}"
+      >
+        <div class="tm-header">
+          <div class="row tm-header-inner">
+            <div class="col-md-6 col-12">
+              {% load static %}
+              <img
+                src="{% static 'images/simple-house-logo.png' %}"
+                alt="Logo"
+                class="tm-site-logo"
+              />
+
+              <div class="tm-site-text-box">
+                <h1 class="tm-site-title">Simple House</h1>
+                <h6 class="tm-site-description">new restaurant template</h6>
+              </div>
+            </div>
+            <nav class="col-md-6 col-12 tm-nav">
+              <ul class="tm-nav-ul">
+                <li class="tm-nav-li">
+                  <a href="{% url 'index' %}" class="tm-nav-link active"
+                    >Home</a
+                  >
+                </li>
+                <li class="tm-nav-li">
+                  <a href="{% url 'about' %}" class="tm-nav-link">About</a>
+                </li>
+                <li class="tm-nav-li">
+                  <a href="{% url 'contact' %}" class="tm-nav-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %} {% block main%} {% block header %}
+  <h2 class="col-12 text-center tm-section-title">Welcome to Simple House</h2>
+  <p class="col-12 text-center">
+    Total 3 HTML pages are included in this template. Header image has a
+    parallax effect. You can feel free to download, edit and use this TemplateMo
+    layout for your commercial or non-commercial websites.
+  </p>
+  {% endblock %}
+  <div class="tm-paging-links">
+    <nav>
+      <ul>
+        <li class="tm-paging-item">
+          <a href="#" class="tm-paging-link active">Meals</a>
+        </li>
+        <li class="tm-paging-item">
+          <a href="#" class="tm-paging-link">Dessert</a>
+        </li>
+        <li class="tm-paging-item">
+          <a href="#" class="tm-paging-link">Beverage</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Gallery -->
+  <div class="row tm-gallery">
+    <!-- gallery page 1 -->
+    <div id="tm-gallery-page-pizza" class="tm-gallery-page">
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          {% load static %}
+          <img
+            src="{% static 'images/gallery/01.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Cobb Salad</h4>
+            <p class="tm-gallery-description">
+              It’s a simple, wholesome chopped salad with lettuce, chicken,
+              crispy bacon, hard-boiled eggs, cherry tomatoes, avocado, and a
+              sprinkle of blue cheese.
+            </p>
+            <p class="tm-gallery-price">$10 / $15</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/02.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Italian Pizza</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$22 / $35</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/03.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Sed varius turpis</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$30.50</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/04.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Aliquam sagittis</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$25.50</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/05.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Maecenas eget justo</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$80.25</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/06.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Quisque et felis eros</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$20 / $40 / $60</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/07.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Sed ultricies dui</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$94</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+        <figure>
+          <img
+            src="{% static 'images/gallery/08.jpg' %}"
+            alt="Image"
+            class="img-fluid tm-gallery-img"
+          />
+          <figcaption>
+            <h4 class="tm-gallery-title">Donec porta consequat</h4>
+            <p class="tm-gallery-description">
+              Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet
+              tellus accumsan
+            </p>
+            <p class="tm-gallery-price">$15</p>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+    <!-- gallery page 1 -->
+    <div class="tm-section tm-container-inner">
+      <div class="row">
+        <div class="col-md-6">
+          <figure class="tm-description-figure">
+            <img src="{% static 'images/img-01.jpg' %}" alt="Image" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <div class="tm-description-box">
+            <h4 class="tm-gallery-title">Maecenas nulla neque</h4>
+            <p class="tm-mb-45">
+              Redistributing this template as a downloadable ZIP file on any
+              template collection site is strictly prohibited. You will need
+              to
+              <a rel="nofollow" href="@Mondol_Real"
+                >talk to us</a
+              >
+              for additional permissions about our templates. Thank you.
+            </p>
+            <a href="{% url 'about' %}" class="tm-btn tm-btn-default tm-right"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endblock%} 
+
+  {% block footer %}
+  <!-- footer section -->
+  <p>
+    Copyright &copy; 2020 Simple House | Design:
+    <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
+  </p>
+   {% endblock %}
+

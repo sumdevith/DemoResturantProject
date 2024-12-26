@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      {% block navbar %}
+      <div class="navbar">
+        <!-- Your navbar content -->
+      </div>
+      {% endblock %} {% block content %}
+      <main>
+        <!-- Your main content -->
+        {% block main %} {%block header%}
+        <header class="row tm-welcome-section">
+          <!-- your header content -->
+        </header>
+        {%endblock%}
+        <div class="content">
+          <!-- Your page content -->
+        </div>
+        {% endblock %}
+      </main>
+      <footer class="tm-footer text-center">
+        {%block footer%} {% endblock%}
+      </footer>
+      {% endblock %}
+    </div>
+    <script>
+      $(document).ready(function () {
+        // Handle click on paging links
+        $(".tm-paging-link").click(function (e) {
+          e.preventDefault();
+
+          var page = $(this).text().toLowerCase();
+          $(".tm-gallery-page").addClass("hidden");
+          $("#tm-gallery-page-" + page).removeClass("hidden");
+          $(".tm-paging-link").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/parallax.min.js' %}"></script>
+</html>
